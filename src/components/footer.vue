@@ -1,16 +1,22 @@
 <template>
   <footer>
-    <p>© xiedaimala.com 2018 wechat: xiedaimala01</p>
+    <p>© 2019 SmallYU OpenSource:<a href="https://github.com/chenxingyu0830/vue-blog-client">GitHub</a></p>
   </footer>
 </template>
 
-<style scoped>
+<style lang="less" scoped>
+
+@import "../assets/base.less";  
+
   footer {
     align-self: end;
-    background-color: #d7d7d7;
-    color: #666;
+    background-color: @bgColor;
+    color: #fff;
     font-size: 13px;
     padding: 10px;
     text-align: center;
+    a {
+      color: #ddd;
+    }
   }
 </style>

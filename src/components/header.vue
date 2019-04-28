@@ -1,8 +1,7 @@
 <template>
   <header :class="{login: isLogin, 'no-login': !isLogin}">
     <template v-if="!isLogin">
-      <h1>Let's share</h1>
-      <p>精品博客汇聚</p>
+      <h1>Let's share of client-blog</h1>
       <div class="btns">
         <router-link to="/login"><el-button>立即登录</el-button></router-link>
         <router-link to="/register"><el-button>注册账号</el-button></router-link>
@@ -69,7 +68,7 @@ header.no-login {
   h1 {
     color: #fff;
     font-size: 40px;
-    margin: 60px 0 0 0;
+    margin: 20px 0 0 0;
     text-transform: uppercase;
 
     a {
@@ -82,9 +81,6 @@ header.no-login {
     color: #fff;
   }
   
-  .btns {
-    margin-top: 20px;
-  }
 
   button {
     margin: 20px 5px 0;
@@ -112,40 +108,55 @@ header.login {
   .edit {
     color: #fff;
     font-size: 30px;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.5);
+    }
   }
 
   .avatar {
     width: 40px;
     height: 40px;
-    border: 1px solid #fff;
     border-radius: 50%;
     margin-left: 15px;
   }
 
   .user {
   position: relative;
+    img{
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+    
 
     ul {
       display: none;
       position: absolute;
-      right: 0;
+      right: -15px;
       list-style: none;
       border: 1px solid #eaeaea;
+      border-radius: 5px;
       margin:0;
       padding: 0;
       background-color: #fff;
-
+     
       a {
         text-decoration: none;
         color: #333;
-        font-size: 12px;
+        font-size: 16px;
         display: block;
-        padding: 5px 10px;
+        padding: 10px 20px;
+        white-space:nowrap;
 
         &:hover {
           background-color: #eaeaea;
         }
+      
       }
+
+
 
     }
 

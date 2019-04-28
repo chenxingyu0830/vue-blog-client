@@ -5,14 +5,20 @@
   .item {
     display: grid;
     grid: auto auto / 80px 1fr;
-    margin: 20px 0;
+    padding: 20px;
+    &:not(:first-child){
+      border-top: 1px solid #ddd;
+    }
+    &:hover{
+      background-color:#F8F8FF;
+    }
 
     .avatar {
       grid-column: 1;
       grid-row: 1 / span 2;
       justify-self: center;
-      margin-left: 0;
       text-align: center;
+      margin-left: 0;
 
       img {
         width: 60px;
