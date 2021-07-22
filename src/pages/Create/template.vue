@@ -6,12 +6,12 @@
     <p :class="titleActive">{{ title.length }} / 30</p>
     <p class="msg">限30个字</p>
     <h3>内容简介</h3>
-    <el-input type="textarea"  v-model="description" :autosize="{ minRows: 2, maxRows: 6}" 
+    <el-input type="textarea"  v-model="description" :autosize="{ minRows: 2, maxRows: 2}" 
     maxlength="50"  @input="verifyDescription"></el-input>
     <p :class="descriptionActive">{{ description.length }} / 50</p>
     <p class="msg">限50个字</p>
     <h3>文章内容</h3>
-    <el-input type="textarea"  v-model="content" :autosize="{ minRows: 4, maxRows: 30}" 
+    <el-input type="textarea"  v-model="content" :autosize="{ minRows: 4, maxRows: 4}" 
     maxlength="500"  @input="verifyContent"></el-input>
     <p :class="contentActive">{{ content.length }} / 500</p>
     <p class="msg">限500个字</p>
