@@ -11,7 +11,9 @@
     </template>
     <template v-if="isLogin">
       <h1><router-link to="/">Let's share</router-link></h1>
-      <router-link to="/create"><i class="edit el-icon-plus"></i></router-link>
+      <router-link to="/create">
+        <i class="edit el-icon-document-add" title="新增" />
+      </router-link>
       <div class="user">
         <img
           class="avatar"
@@ -109,7 +111,7 @@ header.login {
     font-size: 30px;
     transition: all 0.5s;
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
   }
 
