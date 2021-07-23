@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <Header id="header"></Header>
-    <main id="main">
+    <main id="main" class="main">
       <router-view />
+      <el-backtop target="#main" bottom="15" />
     </main>
     <Footer id="footer"></Footer>
   </div>
