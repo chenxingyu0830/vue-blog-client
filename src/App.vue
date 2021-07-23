@@ -3,7 +3,9 @@
     <Header id="header"></Header>
     <main id="main" class="main">
       <router-view />
-      <el-backtop target="#main" bottom="15" />
+      <el-backtop target="#main" bottom="15">
+        <div class="upicon">UP</div>
+      </el-backtop>
     </main>
     <Footer id="footer"></Footer>
   </div>
@@ -61,6 +63,17 @@ body,
   grid-area: footer;
   padding-left: 12%;
   padding-right: 12%;
+}
+
+.upicon {
+  height: 100%;
+  width: 100%;
+  border-radius: 20%;
+  background-color: #f2f5f6;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  line-height: 40px;
+  color: #1989fa;
 }
 
 @media (max-width: 768px) {
