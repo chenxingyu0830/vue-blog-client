@@ -3,7 +3,7 @@
     <Header id="header"></Header>
     <main id="main" class="main">
       <router-view />
-      <el-backtop target="#main" bottom="15">
+      <el-backtop target="#main" right="20" bottom="15">
         <div class="upicon">UP</div>
       </el-backtop>
     </main>

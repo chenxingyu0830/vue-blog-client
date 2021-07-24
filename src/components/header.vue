@@ -12,11 +12,7 @@
     <template v-if="isLogin">
       <h1><router-link to="/">Let's share</router-link></h1>
       <router-link to="/create">
-         <img
-          class="edit"
-          title="新增"
-          src="../assets/add.svg"
-        />
+        <img class="edit" title="新增" src="../assets/add.svg" />
       </router-link>
       <div class="user">
         <img
@@ -140,7 +136,7 @@ header.login {
     ul {
       display: none;
       position: absolute;
-      right: -15px;
+      right: 0;
       list-style: none;
       border: 1px solid #eaeaea;
       border-radius: 5px;
