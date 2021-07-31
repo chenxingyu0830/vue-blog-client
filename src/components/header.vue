@@ -1,7 +1,7 @@
 <template>
   <header :class="{ login: isLogin, 'no-login': !isLogin }">
     <template v-if="!isLogin">
-      <h1>Let's share of client-blog</h1>
+      <h1>share-blog</h1>
       <div class="btns">
         <router-link to="/login"><el-button>立即登录</el-button></router-link>
         <router-link to="/register">
@@ -10,7 +10,7 @@
       </div>
     </template>
     <template v-if="isLogin">
-      <h1><router-link to="/">Let's share</router-link></h1>
+      <h1><router-link to="/">share-blog</router-link></h1>
       <router-link to="/create">
         <img class="edit" title="新增" src="../assets/add.svg" />
       </router-link>
@@ -160,6 +160,15 @@ header.login {
 
     &:hover ul {
       display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header.no-login,
+  header.login {
+    h1 {
+      font-size: 36px;
     }
   }
 }
